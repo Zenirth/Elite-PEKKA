@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форми</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+  <form>
+    <div>
+      <label for="name">Ваше ім'я</label><br />
+      <input type="text" name="name" id="name" placeholder="Введіть Ваше ім'я">
+    </div>
+    <div>
+      Більше подобається<br />
+      <input type="radio" name="like" value="42" id="likeCats"><label for="like42">42</label>
+      <input type="radio" name="like" value="52" id="likeDogs"><label for="like52">52</label>
+    </div>
+    <div>
+      <label for="education">Зараз навчаюсь</label><br />
+      <select name="education" id="education">
+        <option value="none">Не вказано</option>
+        <option value="home">Дома</option>
+        <option value="not home">Не дома</option>
+        <option value="other">Інше</option>
+        <option value="not other">Не інше</option>
+      </select>
+    </div>
+    <div>
+      <label for="agree">Згода на обробку персональних даних</label>
+      <input type="checkbox" name="agree" id="agree" value="1">
+    </div>
+    <div>
+      <button type="reset">Очистити форму</button>
+      <button type="submit">Відправити всі дані мені(IP також)</button>
+    </div>
+  </form>
+  <script src="forms.js"></script>
+</body>
+</html>
